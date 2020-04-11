@@ -1,0 +1,7 @@
+example.property: "I AM IN THE DEFAULT"
+spring.jpa.hibernate.ddl-auto: none
+spring.datasource.url: jdbc:mysql://localhost:3306/autobots_dev
+spring.datasource.username: root
+spring.datasource.password: mysql
+spring.datasource.driver-class-name: com.mysql.cj.jdbc.Driver
+logging.level.root: debug
