@@ -45,7 +45,9 @@ dependencies {
     implementation 'mysql:mysql-connector-java'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.security:spring-security-rsa'
-
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
 
     implementation 'org.projectlombok:lombok:1.18.12'
 

@@ -1,0 +1,5 @@
+#This file is used to ignore files which we don't want to commit to repository.
+.idea/**
+.gradle/**
+build/**
+gradle/**
