@@ -35,7 +35,12 @@ public class LicenseService {
     @Autowired
     OrganizationDiscoveryClient organizationDiscoveryClient;
 
-    @HystrixCommand
+    @HystrixCommand(
+            commandProperties = {
+                    //default timeout is 1000 ms (1 second)
+                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "12000")
+            }
+    )
     public License getLicense(String organizationId, String licenseId) {
         License license = licenseRepository.findByOrganizationIdAndLicenseId(organizationId, licenseId);
 
@@ -149,7 +154,7 @@ public class LicenseService {
 
     private void sleep(){
         try {
-            Thread.sleep(11000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

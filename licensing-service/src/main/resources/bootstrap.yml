@@ -7,3 +7,10 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG

@@ -33,6 +33,6 @@ spring:
       server:
         git:
           uri: https://github.com/kkatleri/config-repo
-          searchPaths: licensingservice,organizationservice
-          username: your_git_username
-          password: your_git_password
+          searchPaths: licensingservice,organizationservice,zuulservice
+          username: kkatleri
+          password: kkGithub2020#
