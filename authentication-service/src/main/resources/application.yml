@@ -3,6 +3,8 @@ management:
     web:
       exposure:
         include: "*"
+  security:
+    enabled: false
 
 eureka:
   instance:
@@ -13,10 +15,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-#security:
-#  oauth2:
-#    resource:
-#      userInfoUri: http://localhost:8082/auth/user
+server:
+  servlet:
+    contextPath:   /auth
+  port: 8082
 
 #Setting logging levels
 logging:
